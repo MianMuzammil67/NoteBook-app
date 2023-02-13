@@ -24,7 +24,6 @@ public class RvMainAdapter extends RecyclerView.Adapter<RvMainAdapter.viewHolder
         this.context = context;
         this.list = list;
     }
-
     @NonNull
     @Override
     public RvMainAdapter.viewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {

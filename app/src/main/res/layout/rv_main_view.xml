@@ -56,7 +56,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="7dp"
-                android:maxLines="2"
+                android:maxLines="3"
                 android:text="Notes"
                 android:textColor="@color/black"
                 android:textSize="16sp" />
