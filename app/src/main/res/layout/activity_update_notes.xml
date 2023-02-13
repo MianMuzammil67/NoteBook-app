@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Activities.AddNotesActivity">
+
+    <EditText
+        android:id="@+id/upTittle"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/et_bg"
+        android:ems="10"
+        android:textColor="#000"
+        android:hint="Title..."
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColorHint="@color/et_bg_stroke"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/upSubTittle"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/et_bg"
+        android:ems="10"
+        android:textColor="#000"
+        android:textColorHint="@color/et_bg_stroke"
+        android:hint="Subtitle..."
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/upTittle"
+        app:layout_constraintStart_toStartOf="@+id/upTittle"
+        app:layout_constraintTop_toBottomOf="@+id/upTittle" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Priority"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/upSubTittle"
+        app:layout_constraintTop_toBottomOf="@+id/upSubTittle" />
+
+    <EditText
+        android:id="@+id/upNotes"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/et_bg"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Notes"
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        android:scrollHorizontally="false"
+        android:textColor="#000"
+        android:textColorHint="@color/et_bg_stroke"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/upSubTittle"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <ImageView
+        android:id="@+id/upYellowPriority"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/yellow_shape"
+        app:layout_constraintBottom_toBottomOf="@+id/textView3"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="@+id/textView3" />
+
+    <ImageView
+        android:id="@+id/upGreenPriority"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/green_shape"
+        app:layout_constraintBottom_toBottomOf="@+id/upYellowPriority"
+        app:layout_constraintStart_toEndOf="@+id/upYellowPriority"
+        app:layout_constraintTop_toTopOf="@+id/upYellowPriority"
+        app:srcCompat="@drawable/icon_done" />
+
+
+    <ImageView
+        android:id="@+id/upRedPriority"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/red_shape"
+        app:layout_constraintBottom_toBottomOf="@+id/upGreenPriority"
+        app:layout_constraintStart_toEndOf="@+id/upGreenPriority"
+        app:layout_constraintTop_toTopOf="@+id/upGreenPriority" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnDoneNotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="26dp"
+        android:clickable="true"
+        app:backgroundTint="@color/teal_200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/icon_done" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
