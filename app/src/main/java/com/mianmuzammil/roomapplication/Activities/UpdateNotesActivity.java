@@ -37,7 +37,7 @@ public class UpdateNotesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityUpdateNotesBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        Objects.requireNonNull(getSupportActionBar()).setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.teal_200)));
+//        Objects.requireNonNull(getSupportActionBar()).setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.teal_200)));
 
         viewModel = ViewModelProviders.of(this).get(NotesViewModel.class);
 
