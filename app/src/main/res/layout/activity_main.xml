@@ -40,11 +40,13 @@
                 android:layout_marginTop="35dp"
                 android:layout_marginEnd="16dp"
                 android:background="@drawable/search_bg"
+                android:theme="@style/ThemeOverlay.SearchView"
                 app:iconifiedByDefault="false"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView4"
-                app:queryHint="search" />
+                app:queryHint="search"
+                app:searchIcon="@drawable/search_icon" />
 
 
             <LinearLayout
@@ -121,13 +123,13 @@
                 android:id="@+id/placeholder"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/placeholder"
                 android:alpha="0.7"
+                android:src="@drawable/placeholder"
                 android:visibility="gone"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/linearLayout"/>
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>
 
@@ -145,7 +147,6 @@
         app:tint="@android:color/white"
 
         />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
